@@ -20,3 +20,4 @@ Here are some ideas to get you started:
 ![Alperen's GitHub Stats](https://github-readme-stats.vercel.app/api?username=AlperenSamurlu&show_icons=true&theme=tokyonight&hide_title=false&hide_border=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AlperenSamurlu&layout=compact&theme=tokyonight&hide=Jupyter%20Notebook)
 
+![Metrics](https://raw.githubusercontent.com/AlperenSamurlu/AlperenSamurlu/master/github-metrics.svg)
