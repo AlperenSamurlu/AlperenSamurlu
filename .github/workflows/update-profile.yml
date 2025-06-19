@@ -2,7 +2,7 @@ name: 🧠 Update GitHub Metrics
 
 on:
   schedule:
-    - cron: '0 3 * * *'       # daily at 03:00 UTC (06:00 Europe/Istanbul)
+    - cron: '0 3 * * *'       # her sabah 06:00 Europe/Istanbul
   workflow_dispatch:
 
 jobs:
@@ -18,14 +18,16 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.METRICS_TOKEN }}
           user: AlperenSamurlu
-          template: classic
-          base: header, activity, community, repositories, metadata
+
+          # artık classic template yerine local TEMPLATE.md kullanacağız:
+          template_path: .github/metrics/TEMPLATE.md
+
           config_timezone: Europe/Istanbul
 
-          # language analysis
+          # dil analizini satır bazlı tutmaya devam edelim (isteğe bağlı):
           plugin_languages: yes
           plugin_languages_indepth: true
-          plugin_languages_details: percentage, bytes-size, lines
+          plugin_languages_details: lines
           plugin_languages_skipped: jupyter notebook, html, markdown, css
 
           output_action: commit
