@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-👨‍💻 I’m **Alperen Samurlu**, a .NET Backend Engineer and AI Optimization enthusiast.
+👨‍💻 I’m **Alperen Samurlu**,  .NET Backend Developer.
 
 ---
 
