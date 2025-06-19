@@ -20,7 +20,7 @@ jobs:
           user: AlperenSamurlu
 
           # artık classic template yerine local TEMPLATE.md kullanacağız:
-          template_path: .github/metrics/TEMPLATE.md
+          template_path: TEMPLATE.md
 
           config_timezone: Europe/Istanbul
 
