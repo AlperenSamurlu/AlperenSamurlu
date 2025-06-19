@@ -1,14 +1,20 @@
 name: 🧠 Update GitHub Metrics
-
 on:
   schedule:
-    - cron: '0 3 * * *'
-  workflow_dispatch:
+    - cron: '0 */6 * * *' # Her 6 saatte bir çalıştır
+  workflow_dispatch: # Manuel tetikleme için
+  push:
+    branches: [ master, main ] # Push olduğunda da çalıştır
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
       - name: Generate GitHub Metrics SVG
         uses: lowlighter/metrics@latest
         with:
@@ -18,10 +24,24 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Istanbul
-
+          
+          # Languages plugin ayarları
           plugin_languages: yes
-          plugin_languages_details: percentage, bytes-size, lines
-          plugin_languages_indepth: true
-          plugin_languages_skipped: jupyter notebook, html, markdown, css
-
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_analysis_timeout_repositories: 7.5
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_indepth: yes
+          plugin_languages_skipped: "jupyter notebook,html,markdown,css,dockerfile"
+          
+          # Çıktı ayarları
           output_action: commit
+          committer_message: "Update GitHub metrics"
+          filename: github-metrics.svg
