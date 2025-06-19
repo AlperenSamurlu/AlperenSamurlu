@@ -6,6 +6,3 @@
 
 <!-- COMMUNITY STATS -->
 {{community}}
-
-<!-- REPOSITORY METADATA (stars, watchers, vs.) -->
-{{metadata}}
