@@ -19,15 +19,12 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Istanbul
 
+          # DİL ANALİZİ
           plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_details: percentage, bytes-size, lines
-          plugin_languages_indepth: true
-          plugin_languages_threshold: 0%
-          plugin_languages_skipped: html, css, markdown
-
-          # 👇 Alt kısımdaki "push activity" için önemli:
-          repositories_forks: true
-          repositories_affiliations: owner, collaborator, organization_member
+          plugin_languages_indepth: true                     # Satır sayısı temelli analiz
+          plugin_languages_sections: most-used               # Sadece üst kısım
+          plugin_languages_details: lines                    # Sadece "satır sayısı" ölçütü
+          plugin_languages_skipped: html, css, markdown      # Önemsiz diller gizlendi
+          plugin_languages_threshold: 1%                     # %1 altında kalanlar gizlensin
 
           output_action: commit
