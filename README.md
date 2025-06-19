@@ -22,9 +22,7 @@
 
 ---
 
-### ⚙️ Detailed Metrics
 
-![Metrics](https://raw.githubusercontent.com/AlperenSamurlu/AlperenSamurlu/master/github-metrics.svg)
 
 ---
 
