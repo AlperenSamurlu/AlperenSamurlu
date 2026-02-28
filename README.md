@@ -9,7 +9,7 @@ Yeni teknolojiler keşfetmeyi, sürekli öğrenmeyi ve fikirleri çalışan proj
 ### 🛠️ Tech Stack & Toolbox
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,py,typescript,javascript,angular,postgres,redis,docker,kubernetes,postman,git,github" />
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,py,typescript,javascript,angular,postgres,redis,docker,postman,git,github" />
   <br>
 </p>
 
