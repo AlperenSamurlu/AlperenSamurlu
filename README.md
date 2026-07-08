@@ -21,7 +21,7 @@
   "developer": "Alperen Samurlu",
   "title": "Yazılım Mühendisi",
   "status": "Building scalable solutions & exploring new tech",
-  "os_preference": ["Fedora", "CachyOS", "Linux"],
+  "os_preference": ["Fedora", "CachyOS"],
   "motto": "Verimli kod, temiz zihin.",
   "about": [
     "Fikirleri çalışan, temiz kodlanmış projelere dönüştürmeyi",
@@ -29,8 +29,7 @@
     "basit ve sürdürülebilir mimarilerle çözmek en büyük motivasyonum."
   ],
   "current_focus": [
-    ".NET Core / Web API",
+    ".NET / Web API",
     "Angular / Flutter",
-    "System Architecture"
   ]
 }
