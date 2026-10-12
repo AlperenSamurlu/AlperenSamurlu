@@ -8,28 +8,6 @@
         /_/                                
 </pre>
   <p>
-    <b>alperen@github</b> | <b>OS:</b> Fedora / CachyOS | <b>Shell:</b> zsh | <b>Role:</b> Software Engineer
+    <b>04.01.2027</b>
   </p>
 </div>
-
----
-
-### `>_ visitor@alperen.dev:~$ cat /home/alperen/about_me.json`
-
-```json
-{
-  "developer": "Alperen Samurlu",
-  "title": "Yazılım Mühendisi",
-  "status": "Building scalable solutions & exploring new tech",
-  "os_preference": ["Fedora", "CachyOS"],
-  "motto": "Verimli kod, temiz zihin.",
-  "about": [
-    "Fikirleri çalışan, temiz kodlanmış projelere dönüştürmeyi",
-    "seven bir yazılım mühendisiyim. Karmaşık iş süreçlerini",
-    "basit ve sürdürülebilir mimarilerle çözmek en büyük motivasyonum."
-  ],
-  "current_focus": [
-    ".NET / Web API",
-    "Angular / Flutter",
-  ]
-}
